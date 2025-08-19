@@ -3,6 +3,13 @@
 const quoteText = document.getElementById('quote-text');
 const quoteAuthor = document.getElementById('quote-author');
 const newQuoteBtn = document.querySelector('#new-quote');
+const quoteBox = document.getElementById('quote-box');
+const recentList = document.getElementById('recent-list');
+const shareLink = document.getElementById('share-link');
+const clearBtn = document.getElementById('clear-recent');
+const addForm = document.getElementById('add-form');
+const quoteInput = document.getElementById('quote-input');
+const authorInput = document.getElementById('author-input');
 
 
 const quotes =[
@@ -15,6 +22,20 @@ const quotes =[
     {text:"Life is a journey, not a destination.", author: "A person"},
     {text:"I love blue cheese!", author: "Noone"}
 ];
+
+//store the recent quotes
+const recent[];
+
+// function renderRecent() {
+//   const frag = document.createDocumentFragment();
+//   recentList.innerHTML = '';
+//   for (const item of recent) {
+//     const li = document.createElement('li');
+//     li.textContent = `"${item.text.slice(0, 50)}${item.text.length > 50 ? '…' : ''}" — ${item.author}`;
+//     frag.appendChild(li);
+//   }
+//   recentList.appendChild(frag);
+// }
 
 newQuoteBtn.addEventListener('click', function() {
 

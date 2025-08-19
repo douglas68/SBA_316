@@ -1,27 +1,35 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #0d67f8;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  padding: 40px;
 }
 
 main {
   background-color: #310bdd;
   padding: 30px;
   border-radius: 15px;
-  text-align: center;
-  max-width: 500px;
+  max-width: 600px;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 #quote-box {
   margin: 20px 0;
+  padding:15px;
+  border-left:4px solid #6e8db8;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 15px;
+  margin: 5px 0;
   font-size: 16px;
   border: none;
   background-color: #0047ab;
@@ -32,4 +40,34 @@ button {
 
 button:hover {
   background-color: #003080;
+}
+
+.flash {
+  animation: flash 400ms ease-out;
+}
+
+@keyframes flash {
+  from { background: #e0f0ff; }
+  to   { background: transparent; }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#share-link {
+  color: #eef4f8; 
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+#share-link:hover {
+  color: #010a0f; /* darker blue when hovered */
+  text-decoration: underline;
 }

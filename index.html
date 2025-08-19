@@ -9,11 +9,25 @@
 <body>
     <main id="main">
     <h1>Daily Inspiration</h1>
+    
     <div id="quote-box">
       <p id="quote-text">Click the button to get your quote!</p>
       <p id="quote-author"></p>
+      <a id="share-link" href="#" target="_blank" rel="noopener">Share on Twitter</a>
     </div>
+
     <button id="new-quote">Get New Quote</button>
+    <button id="clear-recent">Clear Recent</button>
+    <h2>Recent Quotes</h2>
+    <ul id="recent-list"></ul>
+
+    <h2>Add Your Own Quote</h2>
+    <form id="add-form">
+      <input id="quote-input" type="text" placeholder="Your quote" required minlength="10" />
+      <input id="author-input" type="text" placeholder="Author (optional)" />
+      <button type="submit">Add Quote</button>
+
+
     </main>
     <script src="./scripts/scripts.js"></script>
 </body>
