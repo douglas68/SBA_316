@@ -68,6 +68,6 @@ ul li {
 }
 
 #share-link:hover {
-  color: #010a0f; /* darker blue when hovered */
+  color: #010a0f; 
   text-decoration: underline;
 }
